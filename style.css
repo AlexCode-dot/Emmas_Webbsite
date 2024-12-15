@@ -429,15 +429,18 @@ KONTAKT BOX
 
 @media only screen and (max-width: 700px) {
     .kontakt-box {
-        padding: 10px 10px 20px;
+        padding: 40px 5px 0px;
         display: none;
-        bottom: 170px;
         border-radius: 20px;
         background-color: #fb607f;
         position: fixed;
         color: white;
-        left: 20px;
-        right: 20px;
+        top: 145px;
+        left: 5px;
+        right: 5px;
+        bottom: 50px;
+        max-width: 100%;
+        max-height: 100%;
     }
 }
 
@@ -464,6 +467,7 @@ KONTAKT BOX
 
 @media only screen and (max-width: 700px) {
     .mail {
+        margin-top: 80px;
         text-align: center;
     }
 }
@@ -497,7 +501,7 @@ KONTAKT BOX
         display: block;
         margin-left: auto;
         margin-right: auto;
-        max-width: 90px;
+        width: 300px;
     }
 }
 
@@ -538,7 +542,6 @@ BEHANDLINGAR
 .behandlingar-content-container {
     z-index: 1;
     display: block;
-    position: relative;
     border-style: solid;
     border-width: 0px 2px 0px;
     border-color: #fb607f;
@@ -549,20 +552,16 @@ BEHANDLINGAR
     font-size: 50px;
     color: #fb607f;
     text-align: center;
-    padding: 20px 0px 30px;
-    border-style: solid;
-    border-width: 2px 0px;
-    border-color: #fb607f;
     font-family: Snell Roundhand, cursive	;
 }
 
 .behandlingar__image {
-    max-width: 50px;
+    object-fit: contain;
+    width: 10%;
+    margin-left: 10px;
     filter: hue-rotate(45deg);
-    position: absolute;
-    top: 20px;
-    right: 60px;
     transform: rotate(30deg);
+    justify-content: flex-end;
 }
 
 .behandlingar__title {
@@ -588,17 +587,17 @@ BEHANDLINGAR
 }
 
 .behandlingar__image-end {
-    max-width: 30px;
+    object-fit: contain;
+    width: 10%;
+    margin-left: 20px;
     filter: hue-rotate(45deg);
-    position: absolute;
-    bottom: 30px;
-    left: 110px;
+    justify-content: flex-end;
     transform: rotate(-30deg);
 }
 
 @media only screen and (min-width: 700px) {
     .behandlingar__end-image {
-        max-width: 300px;
+        max-width: 250px;
     }
 }
 
@@ -626,8 +625,22 @@ BEHANDLINGAR
 .behandlingar__image-container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 50px;
 }
+
+.behandlingar__title-container {
+    box-sizing: border-box;
+    padding: 0px 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-style: solid;
+    border-width: 2px 0px;
+    border-color: #fb607f;
+}
+
 
 /*-----------------------------------------------------------
 HIDE/DISPLAY
