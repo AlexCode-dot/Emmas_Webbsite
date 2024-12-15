@@ -14,8 +14,12 @@ omMig.addEventListener(
             aboutMe.style.display = "grid";
         }
         else {
+            logoTitle.classList.remove("hide")
+            headerNav.classList.remove("display")
+            menuBtn.classList.remove("hide")
             aboutMe.style.display = "block"
         }
+        behandlingarContainer.classList.remove("display")
     }
 )
 
@@ -56,11 +60,18 @@ kontakt.addEventListener(
 
 
 const behandlingar = document.querySelector(".behandlingar")
-const behandlingarContainer = document.querySelector(".behandlingar-container")
+const behandlingarContainer = document.querySelector(".behandlingar-wrapper")
+const logoTitle = document.querySelector(".logo__title")
 
 behandlingar.addEventListener(
     "click", 
     () => {
+        if (window.innerWidth <= 700) {
+            headerNav.classList.remove("display")
+            menuBtn.classList.remove("hide")
+            logoTitle.classList.add("hide")
+        }
+
         aboutMe.style.display = "none"
         behandlingarContainer.classList.add("display")
     }

@@ -101,6 +101,7 @@ MENU/NAV
 
 @media only screen and (max-width: 700px) {
     .header__nav {
+        z-index: 2;
         display: none;
         position: fixed;
         background-color: #fff0f5;
@@ -191,6 +192,7 @@ ABOUT ME
 }
 
 .about-me__text1 {
+    color: #fb607f;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -224,7 +226,9 @@ ABOUT ME
     }
 }
 
-.about-me__text2 {}
+.about-me__text2 {
+    color: #fb607f;
+}
 
 @media only screen and (min-width: 700px) {
     .about-me__text2 {
@@ -290,11 +294,44 @@ ABOUT ME
     }
 }
 
-.about-family-text {
+.about-me__family-text {
     font-size: 20px;
     line-height: 25px;
+    color: #fb607f;
 }
 
+.about-me__image4 {
+    object-fit: cover;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #fb607f;
+    border-radius: 50%;
+    grid-row: 4;
+    grid-column: 2/2;
+    width: 100%;
+    max-height: 450px;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+    .about-me__text4 {
+        grid-row: 4;
+        grid-column: 1/2;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        max-width: 460px;
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+}
+
+.about-me__arbetssätt-text {
+    font-size: 20px;
+    line-height: 25px;
+    color: #fb607f;
+}
 
 
 /*-----------------------------------------------------------
@@ -305,6 +342,8 @@ FOOTER
 
 .footer {
     background-color: white;
+    display: flex;
+    justify-content: space-around;
 }
 
 @media only screen and (min-width: 700px) {
@@ -364,6 +403,11 @@ FOOTER
     text-decoration: none;
 }
 
+.footer__faq {
+    color: #fb607f;
+    padding: 10px 40px;
+    font-size: 20px;
+}
 
 
 
@@ -373,6 +417,9 @@ KONTAKT BOX
 
 
 
+.kontakt-box__wrapper {
+    z-index: 3;
+}
 
 @media only screen and (max-width: 700px) {
     .kontakt-box__wrapper {
@@ -476,15 +523,111 @@ BEHANDLINGAR
 -----------------------------------------------------------*/
 
 
+@media only screen and (min-width: 700px) {
+    .behandlingar-wrapper {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
-
-.behandlingar-container {
+.behandlingar-wrapper {
     display: none;
 }
 
+.behandlingar-content-container {
+    z-index: 1;
+    display: block;
+    position: relative;
+    border-style: solid;
+    border-width: 0px 2px 0px;
+    border-color: #fb607f;
+    margin: 10px 15px;
+}
 
+.behandlingar__main-title {
+    font-size: 50px;
+    color: #fb607f;
+    text-align: center;
+    padding: 20px 0px 30px;
+    border-style: solid;
+    border-width: 2px 0px;
+    border-color: #fb607f;
+    font-family: Snell Roundhand, cursive	;
+}
 
+.behandlingar__image {
+    max-width: 50px;
+    filter: hue-rotate(45deg);
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    transform: rotate(30deg);
+}
 
+.behandlingar__title {
+    font-size: 25px;
+    margin: 10px 20px;
+    color: #fb607f;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+}
+
+.behandlingar__info {
+    margin: 20px 20px;
+    color: #fb607f;
+}
+
+.behandlingar__info-last {
+    margin-bottom: 50px;
+}
+
+.behandlingar__main-title-end {
+    font-size: 25px;
+}
+
+.behandlingar__image-end {
+    max-width: 30px;
+    filter: hue-rotate(45deg);
+    position: absolute;
+    bottom: 30px;
+    left: 110px;
+    transform: rotate(-30deg);
+}
+
+@media only screen and (min-width: 700px) {
+    .behandlingar__end-image {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .behandlingar__end-image {
+        max-width: 170px;
+    }
+}
+
+.behandlingar__end-image {
+    object-fit: cover;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #fb607f;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 700px) {
+    .behandlingar__image-container {
+        gap: 20px;
+        justify-content: space-around;
+    }
+}
+
+.behandlingar__image-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
 
 /*-----------------------------------------------------------
 HIDE/DISPLAY
