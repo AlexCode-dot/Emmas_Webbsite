@@ -215,6 +215,7 @@ ABOUT ME
     border-color: #fb607f;
     border-radius: 50%;
     width: 100%;
+    max-height: 450px;
 }
 
 @media only screen and (min-width: 700px) {
