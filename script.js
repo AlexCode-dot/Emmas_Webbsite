@@ -43,10 +43,16 @@ kontakt.addEventListener(
         kontaktBox.append(closeBtn)
         kontaktBox.insertBefore(closeBtn, kontaktBox.children[0]);
 
+        if (window.innerWidth <= 700) {
+            headerNav.classList.remove("display")
+            document.querySelector(".close-menu-btn").remove();
+        }
+
         closeBtn.addEventListener(
             "click",
             () => {
                 kontaktBox.classList.remove("display");
+                menuBtn.classList.remove("hide")
                 closeBtn.remove();
             }
         )
