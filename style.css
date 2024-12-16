@@ -435,10 +435,10 @@ KONTAKT BOX
         background-color: #fb607f;
         position: fixed;
         color: white;
-        top: 145px;
+        top: 95px;
         left: 5px;
         right: 5px;
-        bottom: 50px;
+        bottom: 40px;
         max-width: 100%;
         max-height: 100%;
     }
@@ -467,7 +467,7 @@ KONTAKT BOX
 
 @media only screen and (max-width: 700px) {
     .mail {
-        margin-top: 80px;
+        margin-top: 20px;
         text-align: center;
     }
 }
